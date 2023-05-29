@@ -13,6 +13,10 @@ body {
   color: var(--text-color);
   background-color: var(--white-color);
 }
+.container {
+  width: 1158px;
+  margin: 0 auto;
+}
 .link {
   text-decoration: none;
 }
