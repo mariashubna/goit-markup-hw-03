@@ -13,9 +13,24 @@ body {
   color: var(--text-color);
   background-color: var(--white-color);
 }
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+}
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .link {
   text-decoration: none;
@@ -60,9 +75,26 @@ body {
   color: var(--dark-color);
 }
 .footer-logo-span {
-    color: var(--light-color);
+  color: var(--light-color);
+}
+.header-container {
+  border-bottom: var(--accent-color);
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 76px;
+  padding: 24px 0;
+  
 }
 .header-menu {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+  margin-right: 332px;
 }
 
 .header-item {
@@ -75,16 +107,20 @@ body {
   letter-spacing: 0.02em;
   color: var(--dark-color);
 }
-.header-link:hover, .header-link:focus {
-    color: var(--pressed-state-color);
-    text-decoration: underline;
+.header-link:hover,
+.header-link:focus {
+  color: var(--pressed-state-color);
+  text-decoration: underline;
 }
 
 .header-address {
-    font-style: normal 
+  font-style: normal;
 }
 
 .header-list {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
 }
 
 .header-list-item {
@@ -102,6 +138,7 @@ body {
 }
 .hero {
   background-color: var(--dark-color);
+  padding: 188px 0;
 }
 .hero-title {
   font-weight: 700;
@@ -110,6 +147,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--white-color);
   text-align: center;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
 }
 
 .hero-button {
@@ -122,6 +163,13 @@ body {
   border: none;
   font-family: inherit;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -129,80 +177,116 @@ body {
 }
 
 .adventures {
+  padding: 120px 0;
 }
 
-.adventures-title {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .adventures-list {
+  display: flex;
+  gap: 24px;
 }
 
 .adventures-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .adventures-subtitle {
+  margin-bottom: 8px;
 }
 
 .adventures-text {
 }
+
 .work {
 }
 .work-title {
-
+  margin-bottom: 72px;
 }
 .work-list {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 120px;
 }
 .work-item {
 }
 .work-img {
 }
+ {
+  padding: 120px 0;
+}
+.team-container {
+  padding: 120px 0;
+}
 .team {
 }
 .team-title {
+  margin-bottom: 72px;
 }
 .section-title {
 }
-.team-list {
-}
-.list {
-}
 .team {
-    background-color:var(--light-color);
+  background-color: var(--light-color);
 }
 .team-list {
-    
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
-    background-color: var(--white-color);
+  background-color: var(--white-color);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
+
 .team-img {
 }
+.name-person {
+  padding: 32px 16px;
+}
 .team-subtitle {
+  margin-bottom: 8px;
+  text-align: center;
 }
 .team-text {
+  text-align: center;
 }
 .footer {
   background-color: var(--dark-color);
+  padding: 100px 0;
+}
+.footer-container {
+  padding: 0;
 }
 .footer-logo {
 }
-.logo {
-}
-.link {
-}
+
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color);
+  width: 264px;
 }
 
 .porfolio {
 }
 .porfolio-menu {
-}
-.list {
+  display: flex;
 }
 .porfolio-item {
 }
@@ -216,14 +300,17 @@ body {
   letter-spacing: 0.04em;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+  border-radius: 4px;
 }
-.porfolio-button:focus, .porfolio-button:hover {
-    color: var(--white-color);
-    background-color: var(--pressed-state-color);
+.porfolio-button:focus,
+.porfolio-button:hover {
+  color: var(--white-color);
+  background-color: var(--pressed-state-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
-.link {
-}
 .porfolio-list {
 }
 .porfolio-list-item {
@@ -233,5 +320,5 @@ body {
 .porfolio-list-subtitle {
 }
 .porfolio-list-text {
-    color: var(--text-color);
+  color: var(--text-color);
 }
