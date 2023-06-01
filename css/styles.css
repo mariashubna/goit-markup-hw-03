@@ -77,6 +77,9 @@ img {
 .footer-logo-span {
   color: var(--light-color);
 }
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-container {
   border-bottom: var(--accent-color);
   display: flex;
@@ -120,10 +123,12 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
+  padding-left: 0;
 }
 
 .header-list-item {
+  padding: 24px 0;
+  
 }
 
 .header-list-link {
@@ -131,6 +136,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: inherit;
+ 
 }
 .header-list-link:hover,
 .header-list-link:focus {
@@ -197,20 +203,24 @@ img {
 .adventures-list {
   display: flex;
   gap: 24px;
+  
 }
 
 .adventures-item {
-  width: calc((100% - 72px) / 4);
+ 
+ 
 }
 
 .adventures-subtitle {
   margin-bottom: 8px;
+  width: calc((100% - 72px) / 4);
 }
 
 .adventures-text {
 }
 
 .work {
+  padding-bottom: 120px;
 }
 .work-title {
   margin-bottom: 72px;
@@ -220,7 +230,7 @@ img {
   gap: 24px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 120px;
+  
 }
 .work-item {
 }
@@ -230,9 +240,10 @@ img {
   padding: 120px 0;
 }
 .team-container {
-  padding: 120px 0;
+ 
 }
 .team {
+  padding: 120px 0;
 }
 .team-title {
   margin-bottom: 72px;
@@ -254,9 +265,11 @@ img {
 }
 
 .team-img {
+ 
 }
 .name-person {
   padding: 32px 16px;
+ 
 }
 .team-subtitle {
   margin-bottom: 8px;
@@ -273,6 +286,8 @@ img {
   padding: 0;
 }
 .footer-logo {
+  display: inline-block; 
+  margin-bottom: 16px;
 }
 
 .footer-text {
@@ -284,11 +299,28 @@ img {
 }
 
 .porfolio {
+  padding-top: 90px;
+  padding-bottom: 120px;
+
 }
+ .porfolio-container {
+  
+ }
 .porfolio-menu {
   display: flex;
+  margin-bottom: 72px;
+  gap: 24px;
+  max-width: 596px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  
+
 }
 .porfolio-item {
+  
+  
+
 }
 .porfolio-button {
   color: var(--primary-brand-color);
@@ -301,6 +333,7 @@ img {
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   border-radius: 4px;
+  padding: 12px 24px;
 }
 .porfolio-button:focus,
 .porfolio-button:hover {
@@ -312,13 +345,27 @@ img {
 }
 
 .porfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 20px;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .porfolio-list-item {
+  border: 1px solid var(--accent-color);
+  background: var(--white-color);
+  padding-bottom: 32px;
 }
 .porfolio-list-img {
+  margin-bottom: 32px;
 }
 .porfolio-list-subtitle {
+  padding-left: 16px;
+  margin-bottom: 8px;
 }
 .porfolio-list-text {
   color: var(--text-color);
+  padding-left: 16px;
 }
