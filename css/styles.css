@@ -114,7 +114,6 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--pressed-state-color);
-  text-decoration: underline;
 }
 
 .header-address {
@@ -208,13 +207,14 @@ img {
 }
 
 .adventures-item {
-  width: calc((100% - 72px) / 4);
+  
  
  
 }
 
 .adventures-subtitle {
   margin-bottom: 8px;
+  width: calc((100% - 72px) / 4);
  
 }
 
@@ -262,12 +262,12 @@ img {
 
 .team-item {
   background-color: var(--white-color);
-  
+   flex-basis: calc((100% - 3 * 24px) / 4); 
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-img {
-  width: calc((100% - 72px) / 4);
+ 
  
 }
 .name-person {
@@ -372,6 +372,7 @@ img {
   margin-bottom: 8px;
 }
 .porfolio-list-subtitle {
+  margin-bottom: 8px
   
   
 }
