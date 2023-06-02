@@ -208,7 +208,7 @@ img {
 
 .adventures-item {
   
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
  
 }
 
@@ -356,11 +356,9 @@ img {
   margin-right: auto;
 }
 .porfolio-list-item {
-}
-.wrap-porfolio {
   width: calc((100% - 48px) / 3);
-  width: 360px;
 }
+
 .porfolio-list-img {
   
   
