@@ -87,6 +87,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .header-logo {
   margin-right: 76px;
@@ -97,10 +98,11 @@ img {
   display: flex;
   gap: 40px;
   
-  margin-right: 333px;
+ 
 }
 
 .header-item {
+  
 }
 
 .header-link {
@@ -127,7 +129,7 @@ img {
 }
 
 .header-list-item {
-  padding: 24px 0;
+ padding: 0;
   
 }
 
@@ -136,6 +138,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: inherit;
+  padding: 24px 0;
  
 }
 .header-list-link:hover,
@@ -369,7 +372,6 @@ img {
   border: 1px solid var(--accent-color);
   background: var(--white-color);
   border-top: none;
-  margin-bottom: 8px;
 }
 .porfolio-list-subtitle {
   margin-bottom: 8px
